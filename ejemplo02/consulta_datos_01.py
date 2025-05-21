@@ -21,13 +21,15 @@ session = Session()
 # Obtener todos los registros de
 # la entidad estudiante (clase Estudiante)
 
-# estudiantes = session.query(Estudiante).all()
+estudiantes = session.query(Estudiante).all()
 # print(estudiantes)
+for e in estudiantes:
+    print(f"{e.id - e.apellido}")
 
 # print("--------------------------------------")
 # Obtener todos los registros de la clase Modulo
-# modulos = session.query(Modulo).all()
-# print(modulos)
+modulos = session.query(Modulo).all()
+print(modulos)
 
 # print("--------------------------------------")
 # Obtener todos los registros de la clase Matricula
